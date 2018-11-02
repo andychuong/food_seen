@@ -1,4 +1,4 @@
-// Controller posts_tags
+//Controller posts_tags
 const model = require('../models/posts_tags')
 
 const getAll = (req, res, next) => {

@@ -1,3 +1,4 @@
+//Controller
 const model = require('../models/tags_posts')
 
 const getTagsFromPost = (req, res, next) => {

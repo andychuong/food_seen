@@ -5,7 +5,7 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex('posts').insert([{
           id: 1,
-          eventName: 'Free Food',
+          eventName: 'Galvanize Pizza',
           foodName: 'Pizza',
           user_id: 1,
           address: '1023 Walnut St',

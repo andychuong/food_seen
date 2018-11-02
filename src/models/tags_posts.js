@@ -1,3 +1,4 @@
+//Model
 const knex = require('../../knex')
 const postsModel = require('../models/posts')
 const tagsModel = require('../models/tags')

@@ -1,4 +1,3 @@
-// Define DB connections for different environments
 module.exports = {
   development: {
     client: 'pg',
