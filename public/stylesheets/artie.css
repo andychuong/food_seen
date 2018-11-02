@@ -10,3 +10,8 @@ a.btn {
   text-shadow: 1px 1px 1px rgb(236, 120, 55);
   font-weight: bold;
 }
+
+.mainCard {
+  background: hsla(0, 0%, 81%, 0.44);
+  border: 1px solid hsla(0, 0%, 100%, 0);
+}
