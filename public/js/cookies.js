@@ -1,7 +1,7 @@
 /////////COOKIE FUNCTIONS!!!!\\\\\\\\\
 
 let myCookie = document.cookie
-// console.log('cookie: ', myCookie)
+
 let signInBtn = document.getElementById('signInBtn')
 let createBtn = document.getElementById('createBtn')
 let seeMyPostsBtn = document.getElementById('seeMyPostsBtn')
@@ -16,7 +16,7 @@ if (myCookie == '') {
   signInBtn.setAttribute("style", "display:none");
 }
 
-function showMyPosts(){
+function showMyPosts() {
   console.log("seemyposts");
   let myPostsDiv = document.getElementById('myPostsContainer')
   myPostsDiv.setAttribute("style", "display:inline")

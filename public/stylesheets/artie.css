@@ -4,3 +4,9 @@ a.btn {
   margin-top: 7; 
   color: white;
 }
+
+
+.promoted {
+  text-shadow: 1px 1px 1px rgb(236, 120, 55);
+  font-weight: bold;
+}

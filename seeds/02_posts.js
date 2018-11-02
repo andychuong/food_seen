@@ -30,7 +30,7 @@ exports.seed = function(knex, Promise) {
           startTime: "2018-11-02T00:59:00.000Z",
           endTime: "2018-11-02T00:59:00.000Z",
           imageUrl: 'https://prods3.imgix.net/images/articles/2017_09/non-feat-best-bagels-online-yom-kippur.jpg?auto=format%2Ccompress&ixjsv=2.2.3&w=670',
-          promoted: true,
+          promoted: false,
           date: '2018-02-03'
         },
         {
@@ -45,7 +45,7 @@ exports.seed = function(knex, Promise) {
           startTime: "2018-11-02T00:59:00.000Z",
           endTime: "2018-11-02T00:59:00.000Z",
           imageUrl: 'https://static01.nyt.com/images/2017/03/24/dining/24COOKING-CLASSICPANCAKES/24COOKING-CLASSICPANCAKES-articleLarge.jpg',
-          promoted: true,
+          promoted: false,
           date: '2018-10-31'
         },
         {
@@ -75,7 +75,7 @@ exports.seed = function(knex, Promise) {
           endTime: "2018-11-02T00:59:00.000Z",
           zipcode: '80304',
           imageUrl: 'https://images.unsplash.com/photo-1479064578521-1eebbb96eca1?ixlib=rb-0.3.5&s=b7ffce20a46612303a480d42db6d6cf5&auto=format&fit=crop&w=1500&q=80',
-          promoted: true,
+          promoted: false,
           date: '2018-11-12'
         },
         {
@@ -90,7 +90,7 @@ exports.seed = function(knex, Promise) {
           endTime: "2018-11-02T00:59:00.000Z",
           zipcode: '80302',
           imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRra7xdrL4LP_v4tJgNtcRZa4AQ7drciJKz2KvxlfH6Qb-nph0qLg',
-          promoted: true,
+          promoted: false,
           date: '2018-10-31'
         },
       ]);

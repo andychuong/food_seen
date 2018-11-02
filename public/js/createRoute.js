@@ -2,16 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   formSubmit()
 
-  /////////error handler - - change message text input for situation\\\\\\\\\\\\\\
-  const errorMessageFunction = (messageText) => {
-    setTimeout(() => {
-      errorMessage.style.display = "inline"
-      errorMessage.innerText = messageText
-    }, 500)
-    errorMessage.style.animation = "fade-out 5s linear 1 forwards"
-  }
 })
 let createSubmitBtn = document.getElementById('createSubmit')
+let errorMessage = document.getElementById('generalErrorMessage')
 
 function formSubmit() {
   createSubmitBtn.addEventListener('submit', (e) => {
@@ -126,4 +119,12 @@ function formSubmit() {
     successMessage.style.animation = "fade-out 5s linear 1 forwards"
     getPosts()
   })
+}
+
+const errorMessageFunction = (messageText) => {
+  setTimeout(() => {
+    errorMessage.style.display = "inline"
+    errorMessage.innerText = messageText
+  }, 500)
+  errorMessage.style.animation = "fade-out 5s linear 1 forwards"
 }

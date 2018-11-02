@@ -1,5 +1,3 @@
-// var token = document.location.href.split('#')[1]
-
 document.addEventListener("DOMContentLoaded", function(event) {
   M.AutoInit()
   //general function calls
@@ -35,6 +33,9 @@ function getPosts() {
         card.className = 'card hoverable'
         let cardTitle = document.createElement('span')
         cardTitle.className = 'title'
+        if (posts.promoted === true) {
+          cardTitle.className = 'promoted'
+        }
         let cardImage = document.createElement('div')
         cardImage.className = 'card-image'
         let imgSrc = document.createElement('img')
@@ -113,7 +114,11 @@ function getPosts() {
           })
 
         ////FIELDS FOR CARDS\\\\
-        cardTitle.innerText = posts.eventName
+        if (posts.promoted === true) {
+          cardTitle.innerText = `${posts.eventName} 👑`
+        } else {
+          cardTitle.innerText = posts.eventName
+        }
         imgSrc.src = posts.imageUrl
         foodName.innerText = posts.foodName
         dateOnCard.innerText = dayOfWeek + ' ' + month + ', ' + numberDate
@@ -162,17 +167,5 @@ function getPosts() {
     })
     .then(() => {
       // always executed
-    })
-}
-
-
-function getAllTags() {
-  let tagsArray = []
-  axios.get('/tags')
-    .then((tags) => {
-      tags.data.forEach((tag) => {
-        tagsArray.push(tag)
-      })
-      console.log('tags:', tagsArray)
     })
 }
