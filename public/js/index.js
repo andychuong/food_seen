@@ -82,10 +82,12 @@ function getPosts() {
           .then((res) => {
             let tagsArray = res.data
             tagsArray.forEach((post) => {
-              let newTag = document.createElement('span')
+              let newTag =
+                document.createElement('span')
               newTag.className = "cardTags"
               newTag.innerText = post.name
               tags.appendChild(newTag)
+              console.log('in the tags:', tags)
             })
             tags.style.display = "none"
           })
@@ -139,12 +141,15 @@ function getPosts() {
           cardCol.childNodes[0].children[4].setAttribute('style', 'display:inline')
           cardCol.childNodes[0].children[5].setAttribute('style', 'display:inline')
           cardCol.childNodes[0].children[6].setAttribute('style', 'display:inline')
+
           /////APPEND REST OF MINI CARD TO MAIN CARD WITH HIDDEN INFO\\\\\
+          console.log("tags?", cardCol.childNodes[1].children[7])
           if (cardCol.childNodes) {
             cardCol.childNodes[1].children[3].setAttribute('style', 'display:inline')
             cardCol.childNodes[1].children[4].setAttribute('style', 'display:inline')
             cardCol.childNodes[1].children[5].setAttribute('style', 'display:inline')
             cardCol.childNodes[1].children[6].setAttribute('style', 'display:inline')
+            cardCol.childNodes[1].children[7].setAttribute('style', 'display:inline')
           }
           /////APPEND MAIN CARD TO BOTTOM OF MINI STACK\\\\\
           while (cardCol.childNodes.length > 1) {
@@ -157,6 +162,7 @@ function getPosts() {
             miniCardColNodes[i].childNodes[4].setAttribute('style', 'display:none')
             miniCardColNodes[i].childNodes[5].setAttribute('style', 'display:none')
             miniCardColNodes[i].childNodes[6].setAttribute('style', 'display:none')
+            miniCardColNodes[i].childNodes[7].setAttribute('style', 'display:none')
           }
         }
         const tHandler = throttled(200, myHandler);
