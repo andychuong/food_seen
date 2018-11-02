@@ -1,5 +1,5 @@
 # Food Seen
-Full stack application where users can sign in using OAuth(GitHub) to create posts about finding free food and where businesses can promote events under the guise of free food. 
+Full stack application where users can sign in using OAuth(GitHub) to create posts about finding free food and where businesses can promote events under the guise of free food.
 
 # Installation
 * npm install
@@ -10,4 +10,5 @@ Full stack application where users can sign in using OAuth(GitHub) to create pos
 # Working model ERD
 ![image](./erd_food_spot_v2.png)
 # "Screen Shot"
-![image](./images/crown.png)
+![image](./images/index-page.png)
+![image](./images/my-posts.png)
