@@ -9,6 +9,6 @@ Full stack application where users can sign in using OAuth(GitHub) to create pos
 
 # Working model ERD
 ![image](./erd_food_spot_v2.png)
-# "Screen Shot"
+# Screenshots
 ![image](./images/index-page.png)
 ![image](./images/my-posts.png)
